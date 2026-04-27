@@ -1,7 +1,37 @@
 {
     "name": "tdlib-wasm",
     "version": "0.1.0",
+    "description": "A modern WASM-build of Telegram's TDLib library, using emscripten.",
+    "keywords": [
+        "javascript",
+        "nodejs",
+        "td",
+        "tdlib",
+        "telegram",
+        "typescript",
+        "wasm"
+    ],
+    "license": "MIT",
+    "author": {
+        "name": "Hexatare",
+        "email": "120329437+Hexatare@users.noreply.github.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Hexatare/tdlib-wasm"
+    },
+    "files": [
+        "dist/",
+        "README.md",
+        "LICENSE"
+    ],
     "type": "module",
+    "exports": {
+        ".": {
+            "default": "./dist/td_wasm.js",
+            "types": "./dist/td_wasm.d.ts"
+        }
+    },
     "scripts": {
         "format": "oxfmt",
         "format:check": "oxfmt --check"
