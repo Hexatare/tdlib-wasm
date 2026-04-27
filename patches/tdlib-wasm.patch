@@ -1,8 +1,8 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 92b52f7d1..df5fb8212 100644
+index 92b52f7d1..3b047c98a 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -80,16 +80,15 @@ if (EMSCRIPTEN)
+@@ -80,16 +80,14 @@ if (EMSCRIPTEN)
    set(ZLIB_LIBRARIES)
    set(ZLIB_INCLUDE_DIR)
  
@@ -18,7 +18,6 @@ index 92b52f7d1..df5fb8212 100644
    set(TD_EMSCRIPTEN td_wasm)
 -  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -s WASM=1 --post-js ${CMAKE_CURRENT_SOURCE_DIR}/post.js")
 -  set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -s WASM=1")
-+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --post-js ${CMAKE_CURRENT_SOURCE_DIR}/post.js")
  endif()
  
  if (NOT TD_GENERATE_SOURCE_FILES)
