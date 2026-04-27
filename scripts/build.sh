@@ -33,3 +33,4 @@ git apply "$ROOT/patches/tdlib-wasm.patch"
 
 cp "$VENDOR/td/example/web/build/wasm/td_wasm.js" "$DIST/"
 cp "$VENDOR/td/example/web/build/wasm/td_wasm.wasm" "$DIST/"
+cp "$VENDOR/td/example/web/build/wasm/td_wasm.d.ts" "$DIST/"
